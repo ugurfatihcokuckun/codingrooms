@@ -1,11 +1,8 @@
-#1. Create a greeting for your program.
-print("Band name generator")
-#2. Ask the user for the city that they grew up in.
-a = input("Which city you grow up?\n")
-#3. Ask the user for the name of a pet.
-b = input("What is your pet name?\n")
-#4. Combine the name of their city and pet and show them their band name.
-print("Your bandname is " + a + " " + b)
-#5. Make sure the input cursor shows on a new line:
+print("Welcome to the tip calculator")
+bill = input("What was the total bill?")
+percentage = input("What percentage tip would you like to give?")
+split = input("How many people to split the bill?")
 
-# Solution: https://replit.com/@appbrewery/band-name-generator-end
+tip = float(bill) * (float(percentage) / 100 + 1) / float(split)
+tip = "{:.2f}".format(tip)
+print(tip)
